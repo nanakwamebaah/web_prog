@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family:sans-serif;
+                box-sizing:border-box;
+            }
+            body{
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #71b7e6, #9b59b6);
+                padding: 10px;
+            }
+            .bod{
+                background-color:rgb(226, 233, 240);
+                padding: 0;
+                margin: 0;
+                background-size: cover;
+                background-position: center;
+                font-family: sans-serif;
+            }
+            .loginbox{
+                width:450px;
+                height: 420px;
+                background:#fff;
+                color:#fff;
+                top:50%;
+                left:50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                box-sizing: border-box;
+                padding: 70px 30px;
+            }
+            .avatar{
+                width:120px;
+                height:50px;
+                border-radius:10px;
+                position: absolute;
+                top:0px;
+                left:calc(50% - 50px);
+                background:#1876f2;
+            }
+            h1{
+                margin: 0;
+                padding: 0 0 20px;
+                text-align: center;
+                font-size: 22px;
+                color:#9b59b6;
+            }
+            .loginbox p{
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                text-align: left;
+                color:#9b59b6;
+            }
+                .loginbox input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .loginbox input[type="text"], input[type="password"]{
+                border:none;
+                border-bottom: 1px solid #9b59b6;
+                background:transparent;
+                outline:none;
+                height:40px;
+                color:#000;
+                font-size:16px;
+            }
+            .loginbox input[type="submit"]{
+                border:none;
+                outline:none;
+                height:40px;
+                background: linear-gradient(135deg, #71b7e6, #9b59b6);
+                /*background: #1876f2;*/
+                color:#fff;
+                font-size:18px;
+                border-radius:20px;
+            }
+            .loginbox input[type="submit"]:hover{
+                cursor: pointer;
+                background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+                color:#fff;
+                }
+            .loginbox a{
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                color: #9b59b6;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="bod">
+            <div class="loginbox">
+            <!--<img src="../images/logo.png" class ="avatar">-->
+              <h1>Login Here</h1>
+              <form action="Login.php" method="post">
+                <p> Username </p>
+                <input type="text" name="user" placeholder="Enter Username" >
+                <p> Password </p>
+                <input type="password" name="passwd" placeholder="Enter Password"><br>
+                <input type="submit" name="login" value="Login"><br>
+                <input type="submit" name="loginGoogle" value="Login With Google"><br>
+                <!--<a href="#">login with Google</a><br>-->
+                <!--<a href="#">Lost your password?</a><br>-->
+                <a href="register.html">Don't have an account?signup</a>
+              </form>
+              
+            </div>
+            </section>
+    </body>
+</html>
